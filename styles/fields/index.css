@@ -1,12 +1,13 @@
 @import url(droparea.css);
 
 input, textarea, select {
-    appearance: none;
     width: 100%;
     border: .5rem;
     border: 1px solid var(--stroke-default);
     padding: .75rem 1rem;
     font: var(--text);
+    border-radius: 8px; /*eu modifiquei*/
+    resize: none; /*eu modifiquei, tirar risquinhos da lateral*/
 }
 
 label {
@@ -41,4 +42,20 @@ input[type="date"] { /*input do tipo date */
 
 select {
     background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
+}
+
+.adress .flex {
+    gap: 1.25rem;
+}
+
+.input-wrapper:has([disebled]) {
+    opacity: .5;
+}
+
+input {
+    &[disabled] {
+        background-color: var(--surface-disabled);
+        border: 1px solid var(--stroke-default);
+        color: var(--text-primary);
+    }
 }
