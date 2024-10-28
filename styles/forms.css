@@ -13,7 +13,6 @@ fieldset {
 legend {
     margin-top: 1.5rem;
     font: 600 1rem/1.25 var(--font-family);
-    margin-bottom: 1.5rem; /*eu que modifiquei*/
 }
 
 fieldset + fieldset {
