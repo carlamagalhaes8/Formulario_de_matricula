@@ -46,7 +46,7 @@
                         <div class="textarea-wrapper">
                             <label for="medical-info">Informações médicas</label>
                             <textarea name="medical-info" id="medical-info" cols="30" rows="5"
-                                placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (Se sim, específique)"></textarea>
+                                placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (Se sim, especifique)"></textarea>
                         </div>
                         <div class="droparea-wrapper">
                             <label for="birth-file">Certidão de nascimento</label>
@@ -67,7 +67,6 @@
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset>
                         <filedset class="adress">
                             <legend>Endereço residencial</legend>
                             <div class="input-wrapper">
@@ -95,7 +94,26 @@
                                 </div>
                             </div>
                         </filedset>
-                    </fieldset>
+                        <fieldset class="gardian">
+                            <legend>Informações do responsável</legend>
+                            <div class="input-wrapper">
+                                <label for="gardian">Nome do responsável</label>
+                                <input type="text" id="gardian" name="gardian">
+                                <small>Principal responsável legal e contato de emergência</small>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="phone">Telefone</label>
+                                <input type="text" id="phone" name="phone" placeholder="(10) 9 8765-4321">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="mail">Email</label>
+                                <input type="email" name="mail" id="mail" required>
+                                <div class="error">
+                                    <img src="assets/icons/alert-circle.svg" alt="Ícone de alerta vermelho">
+                                    <span>Insira um e-mail válido</span>
+                                </div>
+                            </div>
+                        </fieldset>
                 </form>
             </div>
         </main>
